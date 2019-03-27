@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Class2Demo
 {
@@ -8,7 +9,15 @@ namespace Class2Demo
         {
             foreach (var shape in shapes)
             {
-                shape.Draw();
+                switch (shape.Type)
+                {
+                    case ShapeType.Circle:
+                        Console.WriteLine("Draw a circle.");
+                        break;
+                    case ShapeType.Triangle:
+                        Console.WriteLine("Draw a triangle.");
+                        break;
+                }
             }
         }
     }
