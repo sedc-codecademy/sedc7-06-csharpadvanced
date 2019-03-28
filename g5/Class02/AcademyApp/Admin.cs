@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace AcademyApp
 {
-    class Admin : User
+    class Admin : HumanUser
     {
         public override string GetRole()
         {
             return "Administrator";
         }
 
-        public IEnumerable<User> GetTeachers()
+        public IEnumerable<IUserLike> GetTeachers()
         {
             return Academy.Users.Where(u => u.GetRole() == "Teacher");
         }

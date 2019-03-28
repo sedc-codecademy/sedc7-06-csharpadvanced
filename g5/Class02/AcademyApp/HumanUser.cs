@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace AcademyApp
 {
-    abstract class User
+    abstract class HumanUser : IUserLike
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
         public Academy Academy { get; set; }
         public int ID { get; set; }
         public string Username { get; set; }
@@ -18,7 +21,14 @@ namespace AcademyApp
 
         public override string ToString()
         {
-            return Username;
+            return $"{ID}: {Username}";
         }
+
+        public string GetFullName()
+        {
+            return $"{FirstName} {LastName}";
+        }
+
+
     }
 }

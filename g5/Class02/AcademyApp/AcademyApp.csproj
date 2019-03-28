@@ -45,12 +45,14 @@
   <ItemGroup>
     <Compile Include="Academy.cs" />
     <Compile Include="Admin.cs" />
+    <Compile Include="Bot.cs" />
+    <Compile Include="UserLike.cs" />
     <Compile Include="Course.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Teacher.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="HumanUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

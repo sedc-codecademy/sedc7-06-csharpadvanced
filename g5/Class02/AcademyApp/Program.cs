@@ -34,20 +34,25 @@ namespace AcademyApp
             {
                 Console.WriteLine(item);
             }
-                
-            //Console.WriteLine("-----------");
-            //foreach (User user in academy.Users)
-            //{
-            //    Console.WriteLine(user.GetRole());
-            //}
+
+            Console.WriteLine("-----------");
+            foreach (IUserLike user in academy.Users)
+            {
+                Console.WriteLine(user.GetRole());
+            }
         }
 
         private static Academy InitializeAcademy()
         {
             var result = new Academy("SEDC");
-            result.AddUser(new Admin { Username = "admin" });
-            result.AddUser(new Teacher { Username = "weko" });
-            var emilija = new Student { Username = "emilija" };
+            result.AddUser(new Admin { ID = 1, Username = "admin" });
+            result.AddUser(new Teacher { ID = 2, Username = "weko" });
+            var emilija = new Student { ID = 3, Username = "emilija" };
+
+            result.AddUser(new Bot());
+            result.AddUser(new Bot());
+
+
             result.AddUser(emilija);
 
             var basiccs = new Course { Title = "Basic C#" };

@@ -9,18 +9,18 @@ namespace AcademyApp
     class Academy
     {
         public string Name { get; set; }
-        public List<User> Users { get; set; }
+        public List<IUserLike> Users { get; set; }
         public List<Course> Courses { get; set; }
-        public User CurrentUser { get; private set; }
+        public IUserLike CurrentUser { get; private set; }
 
         public Academy(string name)
         {
             Name = name;
-            Users = new List<User>();
+            Users = new List<IUserLike>();
             Courses = new List<Course>();
         }
 
-        public void AddUser(User user)
+        public void AddUser(IUserLike user)
         {
             Users.Add(user);
             user.Academy = this;

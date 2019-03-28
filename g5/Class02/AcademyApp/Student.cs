@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcademyApp
 {
-    class Student: User
+    class Student: HumanUser, IUserLike
     {
         public Dictionary<Course, int> Grades { get; set; } = new Dictionary<Course, int>();
 

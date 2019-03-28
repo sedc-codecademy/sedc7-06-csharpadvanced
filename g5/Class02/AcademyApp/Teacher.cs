@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcademyApp
 {
-    class Teacher: User
+    class Teacher: HumanUser
     {
         public override string GetRole()
         {
