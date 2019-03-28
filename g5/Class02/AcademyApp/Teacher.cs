@@ -15,7 +15,7 @@ namespace AcademyApp
 
         public override IEnumerable<object> GetSomething()
         {
-            throw new NotImplementedException();
+            return Academy.Courses;
         }
     }
 }

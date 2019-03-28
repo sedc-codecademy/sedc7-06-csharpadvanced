@@ -47,9 +47,17 @@ namespace AcademyApp
             var result = new Academy("SEDC");
             result.AddUser(new Admin { Username = "admin" });
             result.AddUser(new Teacher { Username = "weko" });
-            result.AddUser(new Student { Username = "emilija" });
+            var emilija = new Student { Username = "emilija" };
+            result.AddUser(emilija);
 
-            result.Courses.Add(new Course { Title = "Advanced C#" });
+            var basiccs = new Course { Title = "Basic C#" };
+            var advancedcs = new Course { Title = "Advanced C#" };
+            result.Courses.Add(basiccs);
+            result.Courses.Add(advancedcs);
+
+            emilija.SetGrade(basiccs, 10);
+            emilija.SetGrade(advancedcs, 8);
+
             return result;
         }
     }
