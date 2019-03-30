@@ -115,7 +115,7 @@ namespace AppUI
                             break;
                         } else if (userChoice == 2)
                         {
-                            uiService.ShowStudents(usersDB.Where(x => x.Role == Role.Student).ToList());
+                            uiService.ShowSubjects(subjectsDB);
                             break;
                         } else
                         {

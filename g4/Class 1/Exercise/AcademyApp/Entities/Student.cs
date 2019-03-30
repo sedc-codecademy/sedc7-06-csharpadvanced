@@ -24,13 +24,23 @@ namespace Entities
         {
             foreach (var item in Grades)
             {
-                Console.WriteLine($"{item.Key}: {item.Value}");
+                Console.WriteLine($"{item.Key.Title}: {item.Value}");
             }
         }
 
         public void Enroll(Subject subject)
         {
             CurrentSubject = subject;
+        }
+
+        public double Average()
+        {
+            double sum = 0;
+            foreach (var grade in Grades)
+            {
+                sum += grade.Value;
+            }
+            return sum / Grades.Count;
         }
     }
 }
