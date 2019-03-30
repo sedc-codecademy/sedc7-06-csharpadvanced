@@ -21,7 +21,7 @@ namespace AppUI
                 Console.WriteLine("2) Trainer");
                 Console.WriteLine("3) Student");
                 bool isNumber = int.TryParse(Console.ReadLine(), out choice);
-                if (isNumber)
+                if (isNumber && choice >= 1 && choice <= 3)
                 {
                     break;
                 }
@@ -40,7 +40,6 @@ namespace AppUI
                 Console.Write("Username:");
                 string username = Console.ReadLine();
                 Console.Write("Password:");
-                Console.ReadLine();
                 string password = Console.ReadLine();
                 user = _logicService.LogIn(username, password, database);
                 if (user != null)
@@ -205,6 +204,14 @@ namespace AppUI
                 Console.WriteLine($"{subject.Title} ({subject.EnroledStudents.Count} students)");
             }
             Console.ReadLine();
+        }
+
+        public void PrintAllUsers(List<User> users)
+        {
+            foreach (var user in users)
+            {
+                Console.WriteLine($"{user.FirstName} {user.LastName} - {user.Role}");
+            }
         }
     }
 }
