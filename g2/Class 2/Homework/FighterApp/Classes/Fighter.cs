@@ -19,16 +19,27 @@ namespace FighterApp.Classes
         protected virtual double PowerPunch { get; set; }
         protected virtual double Speed { get; set; }
 
+        /// <summary>
+        /// Takes an amount of damage from an opponent
+        /// </summary>
+        /// <param name="damage">Amount of damage to be taken</param>
         public virtual void TakeDamage(double damage)
         {
             Health -= damage;
         }
 
+        /// <summary>
+        /// Takes all the damage from an opponent
+        /// </summary>
         public virtual void TakeDamage()
         {
             Health = 0;
         }
 
+        /// <summary>
+        /// Checks if opponent is dizzy, if he is then Finisher method should be called.
+        /// </summary>
+        /// <returns>true/false wether the opponent is dizzy or not</returns>
         public virtual bool IsDizzy()
         {
             if (Health < 10)
@@ -38,7 +49,10 @@ namespace FighterApp.Classes
             return false;
         }
 
-        public abstract void Fight(Fighter opponent);
+        /// <summary>
+        /// All opponent's health should be taken and it should Console.Write a finishing style and recovery time in weeks(hard-coded for each fighter)
+        /// </summary>
+        /// <param name="opponent">An opponent to finish</param>
         protected abstract void Finisher(Fighter opponent);
     }
 }

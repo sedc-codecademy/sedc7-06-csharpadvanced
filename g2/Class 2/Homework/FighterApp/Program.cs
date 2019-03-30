@@ -15,11 +15,11 @@ namespace FighterApp
             ProFighter ryu = new ProFighter(150, 4, 2, 13);
             RockstarFighter blanka = new RockstarFighter(170, 5, 4, 17);
 
-            ryu.Fight(blanka);
-            mess.Fight(blanka);
-            blanka.Fight(ryu);
-            blanka.Fight(ryu);
-            blanka.Fight(mess);
+            ryu.DoBoxing(blanka);
+            mess.DoStreet(blanka);
+            blanka.DoBoxing(ryu);
+            blanka.DoMuayThai(ryu);
+            blanka.DoStreet(mess);
 
             Console.ReadLine();
         }
