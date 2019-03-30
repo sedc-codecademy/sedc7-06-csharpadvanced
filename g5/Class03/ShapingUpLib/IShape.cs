@@ -12,4 +12,16 @@ namespace ShapingUpLib
 
         double GetPerimeter();
     }
+
+    public static class IShapeHelper
+    {
+        public static double GetRatio(this IShape shape)
+        {
+            var area = shape.GetArea();
+            var perimeter = shape.GetPerimeter();
+            return area / perimeter;
+        }
+    }
+
+
 }
