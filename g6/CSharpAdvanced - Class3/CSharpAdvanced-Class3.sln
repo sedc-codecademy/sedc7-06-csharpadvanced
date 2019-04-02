@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedClasses", "NestedClasses\NestedClasses.csproj", "{859A5E62-2920-4126-8231-8C9649533FFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticClasses", "StaticClasses\StaticClasses.csproj", "{114F64AE-09D1-4A8B-B40B-E0C0759B220D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "StringExtensions\Extensions.csproj", "{3E55C703-BB83-4F96-B635-7F506C033F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedClassesRefactor", "NestedClassesRefactor\NestedClassesRefactor.csproj", "{83C8C507-ECC4-471B-8B1B-DD1F1E32F680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaMovieApp", "CinemaMovieApp\CinemaMovieApp.csproj", "{4ADC331B-EF8C-4F75-A80A-633BEE7EFBA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SealedClasses", "SealedClasses\SealedClasses.csproj", "{C1F88889-6C50-474F-97E5-0FB5B7B222EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{859A5E62-2920-4126-8231-8C9649533FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859A5E62-2920-4126-8231-8C9649533FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859A5E62-2920-4126-8231-8C9649533FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859A5E62-2920-4126-8231-8C9649533FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{114F64AE-09D1-4A8B-B40B-E0C0759B220D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{114F64AE-09D1-4A8B-B40B-E0C0759B220D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{114F64AE-09D1-4A8B-B40B-E0C0759B220D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{114F64AE-09D1-4A8B-B40B-E0C0759B220D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E55C703-BB83-4F96-B635-7F506C033F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E55C703-BB83-4F96-B635-7F506C033F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E55C703-BB83-4F96-B635-7F506C033F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E55C703-BB83-4F96-B635-7F506C033F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C8C507-ECC4-471B-8B1B-DD1F1E32F680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C8C507-ECC4-471B-8B1B-DD1F1E32F680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C8C507-ECC4-471B-8B1B-DD1F1E32F680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C8C507-ECC4-471B-8B1B-DD1F1E32F680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ADC331B-EF8C-4F75-A80A-633BEE7EFBA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ADC331B-EF8C-4F75-A80A-633BEE7EFBA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ADC331B-EF8C-4F75-A80A-633BEE7EFBA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ADC331B-EF8C-4F75-A80A-633BEE7EFBA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F88889-6C50-474F-97E5-0FB5B7B222EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F88889-6C50-474F-97E5-0FB5B7B222EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F88889-6C50-474F-97E5-0FB5B7B222EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F88889-6C50-474F-97E5-0FB5B7B222EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F32830E-A36E-4818-850F-D3AD8312B751}
+	EndGlobalSection
+EndGlobal
