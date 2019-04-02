@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static CSharpAdvanced_Class4.Enums.Enums;
+using CSharpAdvanced_Class4.Enums;
 
 namespace CSharpAdvanced_Class4
 {
@@ -69,7 +70,7 @@ namespace CSharpAdvanced_Class4
             #endregion
 
             #region Configuration 1
-            Configuration pc1 = new Configuration(Colors.Black); //pc configuration
+            Configuration pc1 = new Configuration(BoxColors.Black); //pc configuration
             pc1.Name = "Configuration 1";
             //add modules to configuration 
             pc1.AddModuleToProduct(m1, 5);
@@ -86,11 +87,11 @@ namespace CSharpAdvanced_Class4
             Console.WriteLine(pc1.Name);
             Console.WriteLine("Box color: {0}", pc1.BoxColor);
             pc1.SetDiscount(5); // 5%
-            Console.WriteLine($"Full price: {pc1.Price}");
-            Console.WriteLine($"Price Samo-za-tebe {pc1.GetPriceWithDiscount()}");
+            Console.WriteLine($"Full price: {pc1.Price.WithCurrency("EUR")}");
+            Console.WriteLine($"Price Samo-za-tebe {pc1.PriceWithCurrency("EUR")}");
 
-            // Console.WriteLine(12345d.WithCurrency("EUR"));
-            Console.WriteLine(pc1.PriceWithCurrency("EUR"));
+            // Console.WriteLine(12345.6789.WithCurrency("EUR"));
+            // Console.WriteLine(pc1.PriceWithCurrency("EUR"));
 
             //Console.WriteLine("Discount price: {0}", pc1.GetPriceWithDiscount().PriceWithCurrency("EUR"));
             Console.WriteLine("--------------------");

@@ -4,14 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CSharpAdvanced_Class4.Interfaces;
-using static CSharpAdvanced_Class4.Enums.Enums;
+using CSharpAdvanced_Class4.Enums;
 
 namespace CSharpAdvanced_Class4
 {
     public abstract class Item
     {
         public string Name { get; set; }
-        public int Quantity { get; set; }
+        public int Quantity { get; set; } = 1;
+
+        //public Item()
+        //{
+        //    Quantity = 1;
+        //}
     }
 
     public class Part : Item, IPrice
@@ -87,7 +92,7 @@ namespace CSharpAdvanced_Class4
 
     public class Configuration : Item, IPrice, IDiscont
     {
-        public Colors BoxColor { get; set; }
+        public BoxColors BoxColor { get; set; }
         private List<Part> _parts = new List<Part>();
         private List<Module> _modules = new List<Module>();
 
@@ -106,8 +111,12 @@ namespace CSharpAdvanced_Class4
 
         public double Discount { get; private set; }
 
-        public Configuration() { }
-        public Configuration(Colors boxColor)
+        public Configuration()
+        {
+            // Quantity = 1;
+        }
+
+        public Configuration(BoxColors boxColor) :  this()
         {
             BoxColor = boxColor;
         }

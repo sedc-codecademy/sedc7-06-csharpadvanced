@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace CSharpAdvanced_Class4.Enums
 {
-    public class Enums
+    public enum BoxColors
     {
-        public enum Colors
-        {
-            Black = 1,
-            Silver,
-            Gray
-        }
+        Black = 1,
+        Silver,
+        Gray
     }
 }
