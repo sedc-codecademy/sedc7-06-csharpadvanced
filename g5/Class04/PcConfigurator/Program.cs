@@ -45,14 +45,14 @@ namespace CSharpAdvanced_Class4
             
             m1.SetDiscount(10); // 10%
             Console.WriteLine("Module 1: {0}", m1.Name);
-            Console.WriteLine(m1.GetPrice());
+            Console.WriteLine($"Full price: {m1.Price}");
+            Console.WriteLine($"Price Samo-za-tebe {m1.GetPriceWithDiscount()}");
             //Console.WriteLine(m1.GetPrice().PriceWithCurrency("EUR"));
             //Console.WriteLine("Discount price: {0}", m1.GetPriceWithDiscount().PriceWithCurrency("EUR"));
             Console.WriteLine("--------------------");
             #endregion
 
             #region Peripherals module
-            /*
             Module m2 = new Module("Perhipherals"); 
             Console.WriteLine("Module 2: {0}", m2.Name);
             m2.AddPartToModule(p12, 1); //wifi mouse
@@ -61,15 +61,14 @@ namespace CSharpAdvanced_Class4
             m2.AddPartToModule(p22, 1); //wifi sound
             m2.AddPartToModule(p9, 1); //HDMI cable for the second monitor of the configuration
             m2.SetDiscount(5); // 5%
-            Console.WriteLine(m2.GetPrice());
+            Console.WriteLine($"Full price: {m2.Price}");
+            Console.WriteLine($"Price Samo-za-tebe {m2.GetPriceWithDiscount()}");
             //Console.WriteLine(m2.GetPrice().PriceWithCurrency("EUR"));
             //Console.WriteLine("Discount price: {0}", m2.GetPriceWithDiscount().PriceWithCurrency("EUR"));
             Console.WriteLine("--------------------");
-            */
             #endregion
 
             #region Configuration 1
-            /*
             Configuration pc1 = new Configuration(Colors.Black); //pc configuration
             pc1.Name = "Configuration 1";
             //add modules to configuration 
@@ -86,12 +85,13 @@ namespace CSharpAdvanced_Class4
 
             Console.WriteLine(pc1.Name);
             Console.WriteLine("Box color: {0}", pc1.BoxColor);
-            Console.WriteLine(pc1.GetPrice());
             pc1.SetDiscount(5); // 5%
+            Console.WriteLine($"Full price: {pc1.Price}");
+            Console.WriteLine($"Price Samo-za-tebe {pc1.GetPriceWithDiscount()}");
+
             //Console.WriteLine(pc1.GetPrice().PriceWithCurrency("EUR"));            
             //Console.WriteLine("Discount price: {0}", pc1.GetPriceWithDiscount().PriceWithCurrency("EUR"));
             Console.WriteLine("--------------------");
-            */
             #endregion
 
         }

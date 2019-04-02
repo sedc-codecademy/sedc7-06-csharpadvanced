@@ -2,31 +2,42 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
 using CSharpAdvanced_Class4.Interfaces;
 using static CSharpAdvanced_Class4.Enums.Enums;
 
 namespace CSharpAdvanced_Class4
-{     
-    public abstract class Item 
+{
+    public abstract class Item
     {
         public string Name { get; set; }
-        public double Price { get; set; }
         public int Quantity { get; set; }
-        public double Discount { get; set; }  
     }
 
     public class Part : Item, IPrice
-    { 
-        public double GetPrice()
-        {
-            return Price;
-        } 
+    {
+        public double Price { get; set; }
     }
 
     public class Module : Item, IPrice, IDiscont
     {
-        private List<Part> _parts = new List<Part>(); 
+        private List<Part> _parts = new List<Part>();
+
+        public double Price
+        {
+            get
+            {
+                // return _parts.Sum(part => part.Price * part.Quantity);
+
+                double price = 0;
+                foreach (var part in _parts)
+                {
+                    price += part.Price * part.Quantity;
+                }
+                return price;
+            }
+        }
+        public double Discount { get; set; }
 
         public Module() { }
         public Module(string name)
@@ -37,13 +48,7 @@ namespace CSharpAdvanced_Class4
         public void AddPartToModule(Part part, int quantity = 1)
         {
             part.Quantity = quantity;
-            _parts.Add(part); 
-        } 
-        
-        public double GetPrice()
-        {
-            // TODO: Implement the GetPrice() method for the Modules
-            throw new NotImplementedException();
+            _parts.Add(part);
         }
 
         public void SetDiscount(double discount)
@@ -53,12 +58,20 @@ namespace CSharpAdvanced_Class4
              * The percentage is a number in the range [0,100]. 5% == 0.05, 10% == 0.1
              * The method should set the Discount property to values between [0.00, 1.00]
              */
-            throw new NotImplementedException();
+            if (discount < 0)
+            {
+                throw new ArgumentException("Discount cannot be less than zero", "discount");
+            }
+            if (discount > 100)
+            {
+                throw new ArgumentException("Discount cannot be more than one hundred percent", "discount");
+            }
+            Discount = discount / 100;
         }
 
         public double GetPriceWithDiscount()
-        { 
-            return GetPrice() * (1 - Discount);
+        {
+            return Price * (1 - Discount);
         }
     }
 
@@ -67,12 +80,23 @@ namespace CSharpAdvanced_Class4
         public Colors BoxColor { get; set; }
         private List<Part> _parts = new List<Part>();
         private List<Module> _modules = new List<Module>();
-        public List<Part> Parts { get; set; }
-        public List<Module> Modules { get; set; } 
+
+        public double Price
+        {
+            get
+            {
+                // TODO: Implement the GetPrice() method for the Configurations
+                /* 
+                 * Consider the _parts and _modules lists. Two foreach loops are needed.
+                 */
+                throw new NotImplementedException();
+            }
+        }
+        public double Discount { get; private set; }
 
         public Configuration() { }
         public Configuration(Colors boxColor)
-        { 
+        {
             BoxColor = boxColor;
         }
 
@@ -88,18 +112,9 @@ namespace CSharpAdvanced_Class4
             throw new NotImplementedException();
         }
 
-        public double GetPrice()
-        {
-            // TODO: Implement the GetPrice() method for the Configurations
-            /* 
-             * Consider the _parts and _modules lists. Two foreach loops are needed.
-             */
-            throw new NotImplementedException();
-        }
-
         public double GetPriceWithDiscount()
         {
-            return GetPrice() * (1 - Discount);
+            return Price * (1 - Discount);
         }
 
         public void SetDiscount(double discount)
