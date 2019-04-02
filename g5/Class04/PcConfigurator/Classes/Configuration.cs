@@ -17,6 +17,11 @@ namespace CSharpAdvanced_Class4
     public class Part : Item, IPrice
     {
         public double Price { get; set; }
+
+        public double GetTotalPrice()
+        {
+            return Price * Quantity;
+        }
     }
 
     public class Module : Item, IPrice, IDiscont
@@ -32,7 +37,7 @@ namespace CSharpAdvanced_Class4
                 double price = 0;
                 foreach (var part in _parts)
                 {
-                    price += part.Price * part.Quantity;
+                    price += part.GetTotalPrice();
                 }
                 return price;
             }
@@ -73,6 +78,11 @@ namespace CSharpAdvanced_Class4
         {
             return Price * (1 - Discount);
         }
+
+        public double GetTotalPrice()
+        {
+            return GetPriceWithDiscount();
+        }
     }
 
     public class Configuration : Item, IPrice, IDiscont
@@ -85,13 +95,15 @@ namespace CSharpAdvanced_Class4
         {
             get
             {
-                // TODO: Implement the GetPrice() method for the Configurations
-                /* 
-                 * Consider the _parts and _modules lists. Two foreach loops are needed.
-                 */
-                throw new NotImplementedException();
+                var partsPrice = _parts.Sum(part => part.GetTotalPrice());
+                var modulesPrice = _modules.Sum(module => module.GetTotalPrice());
+                var price = partsPrice + modulesPrice;
+                return price;
+
+                // return _parts.Sum(part => part.GetTotalPrice()) + _modules.Sum(module => module.GetTotalPrice());
             }
         }
+
         public double Discount { get; private set; }
 
         public Configuration() { }
@@ -102,14 +114,14 @@ namespace CSharpAdvanced_Class4
 
         public void AddPartToProduct(Part part, int quantity = 1)
         {
-            // TODO: Implement the AddPartToProduct() method for the Configuration 
-            throw new NotImplementedException();
+            part.Quantity = quantity;
+            _parts.Add(part);
         }
 
         public void AddModuleToProduct(Module module, int quantity = 1)
         {
-            // TODO: Implement the AddModuleToProduct() method for the Configurations 
-            throw new NotImplementedException();
+            module.Quantity = quantity;
+            _modules.Add(module);
         }
 
         public double GetPriceWithDiscount()
@@ -119,13 +131,20 @@ namespace CSharpAdvanced_Class4
 
         public void SetDiscount(double discount)
         {
-            // TODO: Implement the SetDiscount() method for the Configurations
-            /*
-             * The percentage is a number in the range [0,100]. 5% == 0.05, 10% == 0.1
-             * The method should set the Discount property to values between [0.00, 1.00]
-             * Implementation can be the same as in Module class.
-             */
-            throw new NotImplementedException();
+            if (discount < 0)
+            {
+                throw new ArgumentException("Discount cannot be less than zero", "discount");
+            }
+            if (discount > 100)
+            {
+                throw new ArgumentException("Discount cannot be more than one hundred percent", "discount");
+            }
+            Discount = discount / 100;
+        }
+
+        public double GetTotalPrice()
+        {
+            return GetPriceWithDiscount();
         }
     }
 }

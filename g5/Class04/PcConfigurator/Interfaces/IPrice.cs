@@ -9,5 +9,7 @@ namespace CSharpAdvanced_Class4.Interfaces
     public interface IPrice
     {
         double Price { get; }
+
+        double GetTotalPrice();
     }
 }

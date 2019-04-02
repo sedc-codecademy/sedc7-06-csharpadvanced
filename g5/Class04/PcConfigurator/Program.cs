@@ -72,8 +72,8 @@ namespace CSharpAdvanced_Class4
             Configuration pc1 = new Configuration(Colors.Black); //pc configuration
             pc1.Name = "Configuration 1";
             //add modules to configuration 
-            pc1.AddModuleToProduct(m1, 1);
-            pc1.AddModuleToProduct(m2, 1);
+            pc1.AddModuleToProduct(m1);
+            pc1.AddModuleToProduct(m2);
 
             //add parts to configuration
             pc1.AddPartToProduct(p15, 2); //Monitors x2
