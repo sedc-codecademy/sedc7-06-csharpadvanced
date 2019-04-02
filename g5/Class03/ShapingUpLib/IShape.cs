@@ -21,6 +21,11 @@ namespace ShapingUpLib
             var perimeter = shape.GetPerimeter();
             return area / perimeter;
         }
+
+        public static double GetMultipliedArea(this IShape shape, int multiplier)
+        {
+            return shape.GetArea() * multiplier;
+        }
     }
 
 
