@@ -72,8 +72,8 @@ namespace CSharpAdvanced_Class4
             Configuration pc1 = new Configuration(Colors.Black); //pc configuration
             pc1.Name = "Configuration 1";
             //add modules to configuration 
-            pc1.AddModuleToProduct(m1);
-            pc1.AddModuleToProduct(m2);
+            pc1.AddModuleToProduct(m1, 5);
+            pc1.AddModuleToProduct(m2, 3);
 
             //add parts to configuration
             pc1.AddPartToProduct(p15, 2); //Monitors x2
@@ -89,7 +89,9 @@ namespace CSharpAdvanced_Class4
             Console.WriteLine($"Full price: {pc1.Price}");
             Console.WriteLine($"Price Samo-za-tebe {pc1.GetPriceWithDiscount()}");
 
-            //Console.WriteLine(pc1.GetPrice().PriceWithCurrency("EUR"));            
+            // Console.WriteLine(12345d.WithCurrency("EUR"));
+            Console.WriteLine(pc1.PriceWithCurrency("EUR"));
+
             //Console.WriteLine("Discount price: {0}", pc1.GetPriceWithDiscount().PriceWithCurrency("EUR"));
             Console.WriteLine("--------------------");
             #endregion

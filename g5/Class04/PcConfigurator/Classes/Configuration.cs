@@ -81,7 +81,7 @@ namespace CSharpAdvanced_Class4
 
         public double GetTotalPrice()
         {
-            return GetPriceWithDiscount();
+            return GetPriceWithDiscount() * Quantity;
         }
     }
 
@@ -144,7 +144,7 @@ namespace CSharpAdvanced_Class4
 
         public double GetTotalPrice()
         {
-            return GetPriceWithDiscount();
+            return GetPriceWithDiscount() * Quantity;
         }
     }
 }
