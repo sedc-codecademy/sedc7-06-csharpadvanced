@@ -64,7 +64,13 @@ namespace ShapingUp
             Console.WriteLine(x.Square().Double().AddOne());
 
             Triangle t = new Triangle(3, 7, 9);
+            // these two are completely the same
+            Console.WriteLine(IShapeHelper.GetRatio(t));
             Console.WriteLine(t.GetRatio());
+
+            // these two are completely the same
+            Console.WriteLine(IShapeHelper.GetMultipliedArea(t, 3));
+            Console.WriteLine(t.GetMultipliedArea(3));
 
         }
     }
