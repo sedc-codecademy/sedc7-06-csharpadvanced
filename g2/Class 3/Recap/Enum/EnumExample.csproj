@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E55C703-BB83-4F96-B635-7F506C033F8E}</ProjectGuid>
+    <ProjectGuid>{B8307200-0CEC-4F7E-BB7A-F66ECACE5EE1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>StringExtensions</RootNamespace>
-    <AssemblyName>StringExtensions</AssemblyName>
+    <RootNamespace>Enum</RootNamespace>
+    <AssemblyName>Enum</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyExtensions\NumericExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MyExtensions\StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
