@@ -30,6 +30,19 @@ namespace ClickMe
             {
                 // btnClickMe.Enabled = false;
                 btnClickMe.Click -= WhenButtonClicked;
+                btnClickMe.Click += WhenButtonClickedBy2;
+            }
+        }
+
+        private void WhenButtonClickedBy2(object sender, EventArgs e)
+        {
+            Counter += 2;
+            lblResult.Text = $"I've been clicked {Counter} times!";
+
+            if (Counter >= 30)
+            {
+                // btnClickMe.Enabled = false;
+                btnClickMe.Click -= WhenButtonClickedBy2;
             }
         }
     }
