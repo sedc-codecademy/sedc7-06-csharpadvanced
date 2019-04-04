@@ -17,6 +17,13 @@ namespace StringExtensions
 
             //Printing the short version from the string in the console..
             Console.WriteLine(thumbtailDescription);
+            string broj = "100";
+            Console.WriteLine(broj.IsNumericType());
+            Console.WriteLine(broj.IsNotNumericType());
+            Console.WriteLine(broj.IsDigit());
+            double epsilon = double.Epsilon;
+            Console.WriteLine(epsilon.IsNumericType());
+            Console.WriteLine(epsilon);
 
             Console.ReadLine();
         }
