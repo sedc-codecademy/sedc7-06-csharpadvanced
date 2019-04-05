@@ -35,9 +35,10 @@
 
 ## Enums <br />
 **File**: Enums.cs <br />
-  * Black <br />
-  * Silver <br />
-  * Gray <br />
+  * Colors <br />
+  Black <br />
+  Silver <br />
+  Gray <br />
 
 ## Interfaces <br />
 **File**: IDiscount.cs <br />
