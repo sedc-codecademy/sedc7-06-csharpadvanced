@@ -1,43 +1,43 @@
-# PC Configuration app structure
+# PC Configuration app structure <br />
 
-## Folders
-* Classes
-* Enums
-* Interfaces
+## Folders <br />
+* Classes <br />
+* Enums <br />
+* Interfaces <br />
 
-## Classes 
-**File**: Configuration.cs
-* Item
-* Part
-* Module
-AddPartToModule(Part part, int quantity)
-  GetPrice()
-  SetDiscount()
-  GetPriceWithDiscount()
-* Configuration
-  AddPartToProduct(Part part, int quantity)
-  AddModuleToProduct(Module module, int quantity)
-  GetPrice()
-  GetPriceWithDiscount
-  SetDiscount
+## Classes <br />
+**File**: Configuration.cs <br />
+* Item <br />
+* Part <br />
+* Module <br />
+AddPartToModule(Part part, int quantity) <br />
+  GetPrice()<br />
+  SetDiscount()<br />
+  GetPriceWithDiscount()<br />
+* Configuration <br />
+  AddPartToProduct(Part part, int quantity)<br />
+  AddModuleToProduct(Module module, int quantity)<br />
+  GetPrice()<br />
+  GetPriceWithDiscount<br />
+  SetDiscount<br />
 
-**File**: Extensions.cs
-* Extensions
-  PriceWithCurrency(string currency)
+**File**: Extensions.cs <br />
+* Extensions <br />
+  PriceWithCurrency(string currency)<br />
 
-## Enums
-**File**: Enums.cs
-  * Black
-  * Silver
-  * Gray
+## Enums <br />
+**File**: Enums.cs <br />
+  * Black <br />
+  * Silver <br />
+  * Gray <br />
 
-## Interfaces
-**File**: IDiscount.cs
-* IDiscount
-   SetDiscount(double discount)
-   GetPriceWithDiscount()
+## Interfaces <br />
+**File**: IDiscount.cs <br />
+* IDiscount <br />
+   SetDiscount(double discount)<br />
+   GetPriceWithDiscount()<br />
 
-**File:** IPrice.cs
-* IPrice
-   GetPrice()
+**File:** IPrice.cs <br />
+* IPrice <br />
+   GetPrice()<br />
    
