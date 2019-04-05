@@ -7,19 +7,27 @@
 
 ## Classes <br />
 **File**: Configuration.cs <br />
-* Item <br />
+* abstract Item <br />
+  string Name <br />
+  double Price <br />
+  int Quantity <br />
 * Part <br />
+  double GetPrice() <br />
 * Module <br />
-AddPartToModule(Part part, int quantity) <br />
-  GetPrice()<br />
-  SetDiscount()<br />
-  GetPriceWithDiscount()<br />
+  List<Part> parts <br />
+  void AddPartToModule(Part part, int quantity) <br />
+  double GetPrice()<br />
+  void SetDiscount()<br />
+  double GetPriceWithDiscount()<br />
 * Configuration <br />
-  AddPartToProduct(Part part, int quantity)<br />
-  AddModuleToProduct(Module module, int quantity)<br />
-  GetPrice()<br />
-  GetPriceWithDiscount<br />
-  SetDiscount<br />
+  Colors BoxColor <br />
+  List<Part> Parts <br />
+  List<Module> Modules <br />
+  void AddPartToProduct(Part part, int quantity)<br />
+  void AddModuleToProduct(Module module, int quantity)<br />
+  double GetPrice()<br />
+  double GetPriceWithDiscount<br />
+  void SetDiscount<br />
 
 **File**: Extensions.cs <br />
 * Extensions <br />
@@ -34,10 +42,10 @@ AddPartToModule(Part part, int quantity) <br />
 ## Interfaces <br />
 **File**: IDiscount.cs <br />
 * IDiscount <br />
-   SetDiscount(double discount)<br />
-   GetPriceWithDiscount()<br />
+   void SetDiscount(double discount)<br />
+   double GetPriceWithDiscount()<br />
 
 **File:** IPrice.cs <br />
 * IPrice <br />
-   GetPrice()<br />
+   double GetPrice()<br />
    
