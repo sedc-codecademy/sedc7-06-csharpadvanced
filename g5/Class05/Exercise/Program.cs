@@ -10,10 +10,16 @@ namespace Exercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Rand.TrueOrFalse());
-            Console.WriteLine(Rand.TrueOrFalse());
-            Console.WriteLine(Rand.TrueOrFalse());
-            Console.WriteLine(Rand.TrueOrFalse());
+            var sem = new StringEventManager { Value = "Wekoslav" };
+            sem.Execute += WriteToConsole;
+
+            sem.Run();
         }
+
+        static void WriteToConsole(string inputParameter)
+        {
+            Console.WriteLine($"Value passed to the method is {inputParameter}");
+        }
+
     }
 }
