@@ -33,41 +33,60 @@ namespace CSharpAdvanced_Class4
         {
             Name = name;
         }
-
         public void AddPartToModule(Part part, int quantity = 1)
         {
             part.Quantity = quantity;
             _parts.Add(part); 
-        } 
-        public void RemovePartFromModule(Part part) { }
-        
+        }         
         public double GetPrice()
         {
-            // TODO: Implement the GetPrice() method for the Modules
-            double price = 0;
-            foreach (var item in _parts) {
-                price += (item.Price * item.Quantity);
+            double price = 0.0;
+            foreach (var part in _parts)
+            {
+                price += (part.Price * part.Quantity);
             }
-            return price; // remove this after implementation
+            return price;
         }
-
         public void SetDiscount(double discount)
         {
-            // TODO: Implement the SetDiscount() method for the Modules
-            /*
-             * The percentage is a number in the range [0,100]. 5% == 0.05, 10% == 0.1
-             * The method should set the Discount property to values between [0.00, 1.00]
-             */
+            double _d = 0.0;
+            if (discount < 0.0)
+                _d = 0;
+            else if (discount > 0.0 && discount <= 1.0)
+                _d = discount;
+            else if (discount > 1.0 && discount <= 100.0)
+                _d = discount / 100.0;
+            else _d = 1.0;
 
-            if (discount > 0 && discount <= 100.0)
-                Discount = discount / 100.0;
-            else
-                Discount = 0.0;
-                
+            #region IF alterantive
+            //if (discount < 0)
+            //{
+            //    _d = 0;
+            //}
+            //else
+            //{
+            //    if (discount > 0 && discount <= 1.0)
+            //    {
+            //        _d = discount;
+            //    }
+            //    else
+            //    {
+            //        if(discount > 1.0 && discount <= 100.0)
+            //        {
+            //            _d = discount / 100.0;
+            //        }
+            //        else
+            //        {
+            //            _d = 1.0;
+            //        }
+            //    }
+            //}
+            #endregion
+
+            Discount = _d;
         }
-
         public double GetPriceWithDiscount()
-        { 
+        {
             return GetPrice() * (1 - Discount);
         }
     }
@@ -85,43 +104,48 @@ namespace CSharpAdvanced_Class4
         { 
             BoxColor = boxColor;
         }
-
         public void AddPartToProduct(Part part, int quantity = 1)
         {
-            // TODO: Implement the AddPartToProduct() method for the Configuration 
+            part.Quantity = quantity;
+            _parts.Add(part);
         }
-
-        public void RemovePartFromProduct(Part part) { }
-
-
-
         public void AddModuleToProduct(Module module, int quantity = 1)
         {
-            // TODO: Implement the AddModuleToProduct() method for the Configurations 
+            module.Quantity = quantity;
+            _modules.Add(module);
         }
          
         public double GetPrice()
         {
-            // TODO: Implement the GetPrice() method for the Configurations
-            /* 
-             * Consider the _parts and _modules lists. Two foreach loops are needed.
-             */
-            return 0.0; // remove this after implementation            
+            double price = 0.0;
+            foreach (var part in _parts)
+            {
+                price += (part.Price * part.Quantity);
+            }
+            foreach (var module in _modules)
+            {
+                price += (module.GetPrice() * module.Quantity);
+            }
+            return price;
         }
-
         public double GetPriceWithDiscount()
         {
             return GetPrice() * (1 - Discount);
         }
-
         public void SetDiscount(double discount)
         {
-            // TODO: Implement the SetDiscount() method for the Configurations
-            /*
-             * The percentage is a number in the range [0,100]. 5% == 0.05, 10% == 0.1
-             * The method should set the Discount property to values between [0.00, 1.00]
-             * Implementation can be the same as in Module class.
-             */ 
+            double _d = 0.0;
+            if (discount < 0.0)
+                _d = 0;
+            else if (discount > 0.0 && discount <= 1.0)
+                _d = discount;
+            else if (discount > 1.0 && discount <= 100.0)
+                _d = discount / 100.0;
+            else _d = 1.0;
+
+            Discount = _d;
         }
+
     }
+
 }

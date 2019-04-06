@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7FEFB608-AFBF-4D98-A7D2-06076826FEBD}</ProjectGuid>
+    <ProjectGuid>{8C4F7C12-17E2-4B73-BA19-B45D4A911769}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FighterApp</RootNamespace>
-    <AssemblyName>FighterApp</AssemblyName>
+    <RootNamespace>Delegates_1</RootNamespace>
+    <AssemblyName>Delegates-1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,10 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Fighter.cs" />
-    <Compile Include="Interfaces\IBox.cs" />
-    <Compile Include="Interfaces\IMuayThai.cs" />
-    <Compile Include="Interfaces\IStreet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

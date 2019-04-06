@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static CSharpAdvanced_Class4.Enums.Enums;
 
 namespace CSharpAdvanced_Class4
 {
@@ -35,7 +34,7 @@ namespace CSharpAdvanced_Class4
             Part p22 = new Part() { Name = "Wifi sound", Price = 19.0 };
 
             #region HDD module
-            
+            /*
             Module m1 = new Module("HDD module");  
             m1.AddPartToModule(p1, 1); //HDD
             m1.AddPartToModule(p2, 1); //HDD SSD
@@ -47,13 +46,10 @@ namespace CSharpAdvanced_Class4
             m1.SetDiscount(10); // 10%
             Console.WriteLine("Module 1: {0}", m1.Name);
             Console.WriteLine(m1.GetPrice());
-            Console.WriteLine(m1.GetPriceWithDiscount());
             //Console.WriteLine(m1.GetPrice().PriceWithCurrency("EUR"));
             //Console.WriteLine("Discount price: {0}", m1.GetPriceWithDiscount().PriceWithCurrency("EUR"));
             Console.WriteLine("--------------------");
-            
-
-
+            */
             #endregion
 
             #region Peripherals module
