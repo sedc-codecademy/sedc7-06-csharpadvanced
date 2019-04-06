@@ -5,7 +5,7 @@
 * Cat( from Pet ) with IsLazy and LivesLeft
 * Fish( from Pet ) with color, size
 
-### Create Static Db class with list for every pet separately
+### Create Static Db class with ONE LIST OF PETS
 
 ### Create a generic service class that can work for any pet and can:
 * Add pet to Db
