@@ -22,9 +22,9 @@ Note: Programmers's code is in ***BreakingNews*** folder.
   ***private*** Array: **Type** <br />
   ***public*** Count: **int** <br />
 * Methods: <br />
-  Add(**Type** element): void <br />
+  Add(**Type** element): **void** <br />
   Remove(**int** index): **Type** <br />
   GetElementByIndex(**int** index): **Type** <br />
 
 ### Bonus:
-Use an *indexer* instead of the method *GetElementByIndex*
+Use an **indexer** instead of the method *GetElementByIndex*
