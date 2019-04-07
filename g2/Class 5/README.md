@@ -16,15 +16,15 @@ Note: Programmers's code is in ***BreakingNews*** folder.
 * *Followers*? should print the breaking news in the Console when some *Medium* sends some to them(we can't guess this last point just by looking at the code in Program, we'll just add it so that we look more cool when the programmers are back!)
 
 ## Task 2 - Custom Generic List
-* Create a **generic** class for your custom List
-* The class should have one **Type** parameter<br /> 
+* Create a **generic** class for your custom List 
+* The class should have one **Type** parameter
 * Properties: <br />
   ***private*** Array: **Type** <br />
-  Count: **int** <br />
+  ***public*** Count: **int** <br />
 * Methods: <br />
-  Add(**Type** element): void
-  Remove(**int** index): **Type**
-  GetElementByIndex(**int** index): **Type**
+  Add(**Type** element): void <br />
+  Remove(**int** index): **Type** <br />
+  GetElementByIndex(**int** index): **Type** <br />
 
 ### Bonus:
-Use an indexer instead of the method GetElementByIndex
+Use an *indexer* instead of the method *GetElementByIndex*
