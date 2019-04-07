@@ -8,45 +8,45 @@
 ## Classes <br />
 **File**: Configuration.cs <br />
 * **abstract** ***Item*** <br />
-  **string** Name <br />
-  **double** Price <br />
-  **int** Quantity <br />
+&nbsp; &nbsp; **string** Name <br />
+&nbsp; &nbsp; **double** Price <br />
+&nbsp; &nbsp; **int** Quantity <br />
 * ***Part*** <br />
-  **double** GetPrice() <br />
+&nbsp; &nbsp; **double** GetPrice() <br />
 * ***Module*** <br />
-  **List<Part>** parts <br />
-  **void** AddPartToModule(***Part*** part, ***int*** quantity) <br />
-  **double** GetPrice()<br />
-  **void** SetDiscount()<br />
-  **double** GetPriceWithDiscount()<br />
+&nbsp; &nbsp; **List<Part>** parts <br />
+&nbsp; &nbsp; **void** AddPartToModule(***Part*** part, ***int*** quantity) <br />
+&nbsp; &nbsp; **double** GetPrice()<br />
+&nbsp; &nbsp; **void** SetDiscount()<br />
+&nbsp; &nbsp; **double** GetPriceWithDiscount()<br />
 * ***Configuration*** <br />
-  **Colors** BoxColor <br />
-  **List<Part>** Parts <br />
-  **List<Module>** Modules <br />
-  **void** AddPartToProduct(***Part*** part, ***int*** quantity)<br />
-  **void** AddModuleToProduct(***Module*** module, ***int*** quantity)<br />
-  **double** GetPrice()<br />
-  **double** GetPriceWithDiscount()<br />
-  **void** SetDiscount()<br />
+&nbsp; &nbsp; **Colors** BoxColor <br />
+&nbsp; &nbsp; **List<Part>** Parts <br />
+&nbsp; &nbsp; **List<Module>** Modules <br />
+&nbsp; &nbsp; **void** AddPartToProduct(***Part*** part, ***int*** quantity)<br />
+&nbsp; &nbsp; **void** AddModuleToProduct(***Module*** module, ***int*** quantity)<br />
+&nbsp; &nbsp; **double** GetPrice()<br />
+&nbsp; &nbsp; **double** GetPriceWithDiscount()<br />
+&nbsp; &nbsp; **void** SetDiscount()<br />
 
 **File**: Extensions.cs <br />
 * ***Extensions*** <br />
-  **string** PriceWithCurrency(***string*** currency)<br />
+&nbsp; &nbsp; **string** PriceWithCurrency(***string*** currency)<br />
 
 ## Enums <br />
 **File**: Enums.cs <br />
   * ***Colors*** <br />
-  *Black* <br />
-  *Silver* <br />
-  *Gray* <br />
+&nbsp; &nbsp; *Black* <br />
+&nbsp; &nbsp; *Silver* <br />
+&nbsp; &nbsp; *Gray* <br />
 
 ## Interfaces <br />
 **File**: IDiscount.cs <br />
 * ***IDiscount*** <br />
-   **void** SetDiscount(***double*** discount)<br />
-   **double** GetPriceWithDiscount()<br />
+&nbsp; &nbsp; **void** SetDiscount(***double*** discount)<br />
+&nbsp; &nbsp; **double** GetPriceWithDiscount()<br />
 
 **File:** IPrice.cs <br />
 * ***IPrice*** <br />
-   **double** GetPrice()<br />
+&nbsp; &nbsp; **double** GetPrice()<br />
    
