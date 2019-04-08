@@ -7,7 +7,7 @@ A company for PC parts needs an application for ordering and buying PC parts. Th
 
 ## Requierments
 The company needs these requirements to be implemented in 3 phases with each having a different deadline:
-1. Making an order ** 21.04.2019 **
+1. Making an order **21.04.2019**
 	* The Application should give the client ( user ) the option to order products from the application
 	* Parts can be ordered separately, the min quantity of buying being 1 and max being 10
 	* Modules can be ordered separately, the min quantity of buying being 1 and max being 5
@@ -19,9 +19,9 @@ The company needs these requirements to be implemented in 3 phases with each hav
 		* Type ( by a product type, depending on the product )
 	* When an order is finished, there should be an option to check the order or continue to payment
 	* The user can't select options that are not valid such as letters where there is a need for numbers or numbers that are larger than the numbers given
-2. Making a payment ** 03.05.2019 **
+2. Making a payment **03.05.2019**
 	* Homework 2
-3. Refactoring and extra features ** 13.05.2019 **
+3. Refactoring and extra features **13.05.2019**
 	* Homework 3
 
 ## Flow
