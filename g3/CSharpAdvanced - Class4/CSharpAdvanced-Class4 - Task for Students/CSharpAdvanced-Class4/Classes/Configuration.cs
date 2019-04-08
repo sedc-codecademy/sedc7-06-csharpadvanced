@@ -39,11 +39,16 @@ namespace CSharpAdvanced_Class4
             part.Quantity = quantity;
             _parts.Add(part); 
         } 
+        public void RemovePartFromModule(Part part) { }
         
         public double GetPrice()
         {
             // TODO: Implement the GetPrice() method for the Modules
-            return 0.0; // remove this after implementation
+            double price = 0;
+            foreach (var item in _parts) {
+                price += (item.Price * item.Quantity);
+            }
+            return price; // remove this after implementation
         }
 
         public void SetDiscount(double discount)
@@ -52,7 +57,13 @@ namespace CSharpAdvanced_Class4
             /*
              * The percentage is a number in the range [0,100]. 5% == 0.05, 10% == 0.1
              * The method should set the Discount property to values between [0.00, 1.00]
-             */ 
+             */
+
+            if (discount > 0 && discount <= 100.0)
+                Discount = discount / 100.0;
+            else
+                Discount = 0.0;
+                
         }
 
         public double GetPriceWithDiscount()
@@ -79,6 +90,10 @@ namespace CSharpAdvanced_Class4
         {
             // TODO: Implement the AddPartToProduct() method for the Configuration 
         }
+
+        public void RemovePartFromProduct(Part part) { }
+
+
 
         public void AddModuleToProduct(Module module, int quantity = 1)
         {

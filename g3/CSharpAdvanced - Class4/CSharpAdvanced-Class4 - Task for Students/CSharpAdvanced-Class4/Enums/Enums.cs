@@ -12,7 +12,8 @@ namespace CSharpAdvanced_Class4.Enums
         {
             Black = 1,
             Silver,
-            Gray
+            Gray,
+            Blue
         }
     }
 }

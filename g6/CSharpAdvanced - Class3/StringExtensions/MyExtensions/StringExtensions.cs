@@ -54,5 +54,13 @@ namespace StringExtensions
         {
             return '"' + text + '"';
         }
+
+        public static bool IsDigit(this string input)
+        {
+            bool valid = false;
+            valid = !string.IsNullOrWhiteSpace(input) &&
+                input.All(c => c >= '0' && c <= '9');
+            return valid;
+        }
     }
 }
