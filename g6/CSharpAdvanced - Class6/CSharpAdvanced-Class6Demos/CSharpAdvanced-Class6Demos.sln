@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{15A05828-3C5C-4852-A6F4-4BF6F9D3CCA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericVsNotGeneric", "GenericVsNotGeneric\GenericVsNotGeneric.csproj", "{4CBB50F6-2270-4C90-9250-484764BA9F23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoEncoderApplication", "VideoEncoderApplication\VideoEncoderApplication.csproj", "{99E50BAA-5358-40E3-BD9B-3B2EF7B14057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRenderingApplication", "VideoRenderingApplication\VideoRenderingApplication.csproj", "{6590FF9F-D60F-4E1F-BC57-B054E10E80F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousMethods", "AnonymousMethods\AnonymousMethods.csproj", "{BCAFE339-4A43-43EB-8B7A-9EEC9FA04066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpressions", "LambdaExpressions\LambdaExpressions.csproj", "{5E5EB7F2-1481-4C46-A7F5-E95350F2C1BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15A05828-3C5C-4852-A6F4-4BF6F9D3CCA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A05828-3C5C-4852-A6F4-4BF6F9D3CCA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A05828-3C5C-4852-A6F4-4BF6F9D3CCA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A05828-3C5C-4852-A6F4-4BF6F9D3CCA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CBB50F6-2270-4C90-9250-484764BA9F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CBB50F6-2270-4C90-9250-484764BA9F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CBB50F6-2270-4C90-9250-484764BA9F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CBB50F6-2270-4C90-9250-484764BA9F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E50BAA-5358-40E3-BD9B-3B2EF7B14057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E50BAA-5358-40E3-BD9B-3B2EF7B14057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E50BAA-5358-40E3-BD9B-3B2EF7B14057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E50BAA-5358-40E3-BD9B-3B2EF7B14057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6590FF9F-D60F-4E1F-BC57-B054E10E80F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6590FF9F-D60F-4E1F-BC57-B054E10E80F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6590FF9F-D60F-4E1F-BC57-B054E10E80F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6590FF9F-D60F-4E1F-BC57-B054E10E80F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCAFE339-4A43-43EB-8B7A-9EEC9FA04066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCAFE339-4A43-43EB-8B7A-9EEC9FA04066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCAFE339-4A43-43EB-8B7A-9EEC9FA04066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCAFE339-4A43-43EB-8B7A-9EEC9FA04066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E5EB7F2-1481-4C46-A7F5-E95350F2C1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E5EB7F2-1481-4C46-A7F5-E95350F2C1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E5EB7F2-1481-4C46-A7F5-E95350F2C1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E5EB7F2-1481-4C46-A7F5-E95350F2C1BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D33D72D-8491-4E60-9671-E31247B4A7BB}
+	EndGlobalSection
+EndGlobal
