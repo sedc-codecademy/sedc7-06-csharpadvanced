@@ -11,15 +11,13 @@ namespace BuildingStrings
         static void Main(string[] args)
         {
             var persons = PersonGenerator.GetPersons();
-            Console.WriteLine(persons.Count);
-
+            Console.WriteLine(persons.Count());
             var start = DateTime.Now;
 
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("{ persons: [");
-            for (int i = 0; i < persons.Count; i++)
+            foreach (var person in persons)
             {
-                var person = persons[i];
                 sb.Append($"{{ {person.FirstName} {person.MiddleName} {person.LastName}}}\n");
             }
             sb.AppendLine("]}");
