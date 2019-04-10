@@ -10,18 +10,40 @@ namespace Parking
     {
         public int Capacity { get; private set; }
         public int Occupancy { get; private set; }
-        public int FreeCapacity { get; private set; }
+        public int FreeCapacity
+        {
+            get
+            {
+                return Capacity - Occupancy;
+            }
+        }
 
-        public List<Car> ParkedVehicles { get; set; }
+        private List<Car> parkedVehicles = new List<Car>();
 
         public Parking(int capacity)
         {
-            // todo
+            Capacity = capacity;
+            Occupancy = 0;
         }
 
         public void ParkVehicle(Car vehicle)
         {
-            // to-do
+            if (FreeCapacity > 0)
+            {
+                Occupancy += 1;
+                parkedVehicles.Add(vehicle);
+                vehicle.Parking = this;
+            }
+        }
+
+        public void LeaveVehicle(Car vehicle)
+        {
+            if (parkedVehicles.Contains(vehicle))
+            {
+                Occupancy -= 1;
+                parkedVehicles.Remove(vehicle);
+                vehicle.Parking = null;
+            }
         }
 
     }

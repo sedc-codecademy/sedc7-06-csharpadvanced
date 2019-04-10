@@ -7,12 +7,18 @@
         public bool IsDiesel { get; set; }
         public bool IsElectric { get; set; }
 
-        public bool IsParked { get; set; }
+        public bool IsParked
+        {
+            get
+            {
+                return Parking != null;
+            }
+        }
         public Parking Parking { get; set; }
 
         public void LeaveParking()
         {
-            // to-do
+            Parking.LeaveVehicle(this);
         }
     }
 }
