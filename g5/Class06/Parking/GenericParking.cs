@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Parking
 {
-    public class Parking
+    public class GenericParking<T> where T: IVehicle
     {
         public int Capacity { get; private set; }
         public int Occupancy { get; private set; }
@@ -18,25 +18,25 @@ namespace Parking
             }
         }
 
-        private List<Car> parkedVehicles = new List<Car>();
+        private List<T> parkedVehicles = new List<T>();
 
-        public Parking(int capacity)
+        public GenericParking(int capacity)
         {
             Capacity = capacity;
             Occupancy = 0;
         }
 
-        public void ParkVehicle(Car vehicle)
+        public void ParkVehicle(T vehicle)
         {
             if (FreeCapacity > 0)
             {
                 Occupancy += 1;
                 parkedVehicles.Add(vehicle);
-                // vehicle.Parking = this;
+                vehicle.Parking = this as GenericParking<IVehicle>;
             }
         }
 
-        public void LeaveVehicle(Car vehicle)
+        public void LeaveVehicle(T vehicle)
         {
             if (parkedVehicles.Contains(vehicle))
             {

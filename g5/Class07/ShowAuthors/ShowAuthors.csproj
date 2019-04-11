@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F8C8FA93-D48C-42C4-978C-0DF236E64768}</ProjectGuid>
+    <ProjectGuid>{938A1F33-77BC-4E18-B96F-8C3D7EFBBDAB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Parking</RootNamespace>
-    <AssemblyName>Parking</AssemblyName>
+    <RootNamespace>ShowAuthors</RootNamespace>
+    <AssemblyName>ShowAuthors</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,19 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddressBook.cs" />
-    <Compile Include="Boat.cs" />
-    <Compile Include="Car.cs" />
-    <Compile Include="GenericParking.cs" />
-    <Compile Include="IVehicle.cs" />
-    <Compile Include="Marina.cs" />
-    <Compile Include="Parking.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="authors-list.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BooksProvider\BooksProvider.csproj">
+      <Project>{bf3deb1e-99b3-4457-b33b-abf184d5c1e1}</Project>
+      <Name>BooksProvider</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
