@@ -8,13 +8,13 @@ namespace BuildingStrings
 {
     static class PersonGenerator
     {
-        public static List<Person> GetPersons()
+        public static IEnumerable<Person> GetPersons()
         {
             string[] fnames = {"Andrea", "Bojan", "Vladimir", "Goran", "Dejan", "Gjorgji", "Emil", "Zharko", "Zoran", "Dzvonko", "Petar", "Risto", "Stanko"};
             string[] mnames = { "Aleksandar", "Blagoj", "Venko", "Gorjan", "Dragan", "Gjoko", "Efrem", "Zhivko", "Zlatko", "Dzvonko" };
             string[] lnames = { "Aleksandrov", "Blagojevski", "Venkoski", "Gorjanov", "Draganski", "Gjokov", "Efremov", "Zhivkov", "Zlatkov", "Dzvonkov", "Samardziski" };
 
-            List<Person> result = new List<Person>();
+            Queue<Person> result = new Queue<Person>();
 
             for (int x = 0; x < 200; x++)
             {
@@ -24,7 +24,7 @@ namespace BuildingStrings
                     {
                         for (int k = 0; k < lnames.Length; k++)
                         {
-                            result.Add(new Person
+                            result.Enqueue(new Person
                             {
                                 FirstName = fnames[i],
                                 MiddleName = mnames[j],
