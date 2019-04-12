@@ -12,5 +12,10 @@ namespace BooksProvider
         public int WweId { get; set; }
         public string Name { get; set; }
         public int BookCount { get; set; }
+
+        public override string ToString()
+        {
+            return $"#{WweId}: {Name} ({BookCount} books)";
+        }
     }
 }
