@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Parking
 {
-    public class GenericParking<T> where T: IVehicle
+    public class GenericParking<T> where T: IVehicle<T>
     {
         public int Capacity { get; private set; }
         public int Occupancy { get; private set; }
@@ -32,7 +32,7 @@ namespace Parking
             {
                 Occupancy += 1;
                 parkedVehicles.Add(vehicle);
-                vehicle.Parking = this as GenericParking<IVehicle>;
+                vehicle.Parking = this;
             }
         }
 

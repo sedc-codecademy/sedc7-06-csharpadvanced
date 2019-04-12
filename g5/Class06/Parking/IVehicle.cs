@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Parking
 {
-    public interface IVehicle
+    public interface IVehicle<T> where T: IVehicle<T>
     {
-        GenericParking<IVehicle> Parking {get; set;}
+        GenericParking<T> Parking {get; set;}
     }
 }

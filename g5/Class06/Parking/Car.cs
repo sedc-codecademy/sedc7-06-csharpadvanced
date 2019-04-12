@@ -1,6 +1,6 @@
 ﻿namespace Parking
 {
-    public class Car : IVehicle
+    public class Car : IVehicle<Car>
     {
         public string Make { get; set; }
         public string Model { get; set; }
@@ -14,7 +14,7 @@
                 return Parking != null;
             }
         }
-        public GenericParking<IVehicle> Parking { get; set; }
+        public GenericParking<Car> Parking { get; set; }
 
         public void LeaveParking()
         {
