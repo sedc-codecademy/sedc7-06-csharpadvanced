@@ -1,4 +1,4 @@
-#LINQ Homework
+# LINQ Homework
 
 Based on the data in the `authors.json` file, answer the following questions:
 
@@ -14,7 +14,7 @@ Based on the data in the `authors.json` file, answer the following questions:
 - What author has the most different series?
 - What author has the most books written that belong to a series?
 
-Bonus:
+# Bonus:
 
 - What series has the most authors?
 - In what year most authors published a book?
