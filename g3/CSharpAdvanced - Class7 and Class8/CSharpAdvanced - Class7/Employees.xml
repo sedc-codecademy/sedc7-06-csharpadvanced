@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Employees>
+  <Employee>
+    <EmpId>1</EmpId>
+    <Name>Igor</Name>
+    <Sex>Male</Sex>
+    <Phone Type="Home">078-555-0124</Phone>
+    <Phone Type="Work">02-3555-0545</Phone>
+    <Address>
+      <Street>Dimitar Vlahov</Street>
+      <City>Vinica</City>
+      <State>MK</State>
+      <Zip>2310</Zip>
+      <Country>Macedonia</Country>
+    </Address>
+  </Employee>
+  <Employee>
+    <EmpId>2</EmpId>
+    <Name>Sofia</Name>
+    <Sex>Female</Sex>
+    <Phone Type="Home">077-555-0763</Phone>
+    <Phone Type="Work">02-5055-0567</Phone>
+    <Address>
+      <Street>Ruzveltova</Street>
+      <City>Skopje</City>
+      <State>MK</State>
+      <Zip>1000</Zip>
+      <Country>Macedonia</Country>
+    </Address>
+  </Employee>
+  <Employee>
+    <EmpId>3</EmpId>
+    <Name>Marko</Name>
+    <Sex>Male</Sex>
+    <Phone Type="Home">078-75-0763</Phone>
+    <Phone Type="Work">02-305-0567</Phone>
+    <Address>
+      <Street>Partizanski Odredi</Street>
+      <City>Skopje</City>
+      <State>MK</State>
+      <Zip>1000</Zip>
+      <Country>Macedonia</Country>
+    </Address>
+  </Employee>
+</Employees>
