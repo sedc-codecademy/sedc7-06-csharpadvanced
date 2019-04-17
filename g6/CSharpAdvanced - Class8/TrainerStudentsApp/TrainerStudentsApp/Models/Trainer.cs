@@ -8,7 +8,7 @@ namespace TrainerStudentsApp.Models
     public class Trainer
     {
         public event AnnounceMarkEventHandler AnnounceMark;
-        public void Announce(ExamMarkDetails studentMarkInfo)
+        protected internal void Announce(ExamMarkDetails studentMarkInfo)
         {
             Console.WriteLine($"Trainer: Student with id: {studentMarkInfo.Student.StudentID} - {studentMarkInfo.Student.FirstName} {studentMarkInfo.Student.LastName}, Points: {studentMarkInfo.Points}");
 
