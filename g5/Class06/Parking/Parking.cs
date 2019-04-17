@@ -32,7 +32,7 @@ namespace Parking
             {
                 Occupancy += 1;
                 parkedVehicles.Add(vehicle);
-                vehicle.Parking = this;
+                // vehicle.Parking = this;
             }
         }
 
