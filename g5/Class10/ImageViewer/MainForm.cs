@@ -80,7 +80,7 @@ namespace ImageViewer
             var fileInfo = new FileInfo(filename);
             lblStatus.Text = $"{fileInfo.Length / 1024}kB";
 
-            pictureBox.Load("http://www.worldswithoutend.com/covers/bc_acloseda.jpg");
+            pictureBox.Load(filename);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
