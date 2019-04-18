@@ -15,6 +15,9 @@ namespace ImageViewer
     {
         private string selectedPath = string.Empty;
 
+        private PictureBox pictureBox = new PictureBox();
+
+
         public MainForm()
         {
             InitializeComponent();
@@ -74,9 +77,18 @@ namespace ImageViewer
                 lblStatus.Text = "Invalid image extension";
                 return;
             }
+            var fileInfo = new FileInfo(filename);
+            lblStatus.Text = $"{fileInfo.Length / 1024}kB";
 
-            // to-do: show the file size in kb in the lblStatus text
+            pictureBox.Load("http://www.worldswithoutend.com/covers/bc_acloseda.jpg");
+        }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            pictureBox.Location = new Point(26, 356);
+            pictureBox.Size = new Size(874, 311);
+            pictureBox.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom;
+            Controls.Add(pictureBox);
         }
     }
 }

@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageViewer", "ImageViewer\ImageViewer.csproj", "{B417094A-CCDC-433E-B53E-D49ADAF1241E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksProvider", "BooksProvider\BooksProvider.csproj", "{41E6099E-0C32-482F-B5F4-822B85B9E2C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookImageDisplay", "BookImageDisplay\BookImageDisplay.csproj", "{F8A3AFAC-992E-49B9-BD5F-47245E55BD0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B417094A-CCDC-433E-B53E-D49ADAF1241E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B417094A-CCDC-433E-B53E-D49ADAF1241E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B417094A-CCDC-433E-B53E-D49ADAF1241E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41E6099E-0C32-482F-B5F4-822B85B9E2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E6099E-0C32-482F-B5F4-822B85B9E2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E6099E-0C32-482F-B5F4-822B85B9E2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E6099E-0C32-482F-B5F4-822B85B9E2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8A3AFAC-992E-49B9-BD5F-47245E55BD0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8A3AFAC-992E-49B9-BD5F-47245E55BD0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8A3AFAC-992E-49B9-BD5F-47245E55BD0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8A3AFAC-992E-49B9-BD5F-47245E55BD0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
