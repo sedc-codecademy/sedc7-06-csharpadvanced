@@ -15,8 +15,10 @@ namespace CustomersSorting {
         public void PrintCustomer() {
             Console.WriteLine($"Customer: {Name}, {Address}, {City}, {MonthlySpend}");
         }
-        public int CompareTo(Customer c) {
-            return MonthlySpend.CompareTo(c.MonthlySpend);
+
+        public int CompareTo(Customer other)
+        {
+            return MonthlySpend.CompareTo(other.MonthlySpend);
         }
     }
 }
