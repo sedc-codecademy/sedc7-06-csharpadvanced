@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvWriterReader", "CsvWriterReader\CsvWriterReader.csproj", "{AA191C9C-71BC-49E3-A8DC-D6ADD06F3E3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFromXml", "DataFromXml\DataFromXml.csproj", "{3114637B-5AB0-4BA7-BCA0-CC65139DB362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions1", "Exceptions1\Exceptions1.csproj", "{2376054C-0F3F-4A04-A998-FCCD4CD269EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions2", "Exceptions2\Exceptions2.csproj", "{1B35A829-46FC-40E0-A800-3075FE2F1429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonWriterReader", "JsonWriterReader\JsonWriterReader.csproj", "{97E6B036-F07F-49DC-A7F5-46EE8D488C2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWriterReader", "TextWriterReader\TextWriterReader.csproj", "{DE7FC541-24C9-4318-A8F4-341F5F630852}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA191C9C-71BC-49E3-A8DC-D6ADD06F3E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA191C9C-71BC-49E3-A8DC-D6ADD06F3E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA191C9C-71BC-49E3-A8DC-D6ADD06F3E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA191C9C-71BC-49E3-A8DC-D6ADD06F3E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3114637B-5AB0-4BA7-BCA0-CC65139DB362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3114637B-5AB0-4BA7-BCA0-CC65139DB362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3114637B-5AB0-4BA7-BCA0-CC65139DB362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3114637B-5AB0-4BA7-BCA0-CC65139DB362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2376054C-0F3F-4A04-A998-FCCD4CD269EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2376054C-0F3F-4A04-A998-FCCD4CD269EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2376054C-0F3F-4A04-A998-FCCD4CD269EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2376054C-0F3F-4A04-A998-FCCD4CD269EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B35A829-46FC-40E0-A800-3075FE2F1429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B35A829-46FC-40E0-A800-3075FE2F1429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B35A829-46FC-40E0-A800-3075FE2F1429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B35A829-46FC-40E0-A800-3075FE2F1429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E6B036-F07F-49DC-A7F5-46EE8D488C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E6B036-F07F-49DC-A7F5-46EE8D488C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E6B036-F07F-49DC-A7F5-46EE8D488C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E6B036-F07F-49DC-A7F5-46EE8D488C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7FC541-24C9-4318-A8F4-341F5F630852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7FC541-24C9-4318-A8F4-341F5F630852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7FC541-24C9-4318-A8F4-341F5F630852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7FC541-24C9-4318-A8F4-341F5F630852}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFA440E2-11EC-4609-AA94-36B3E480D887}
+	EndGlobalSection
+EndGlobal

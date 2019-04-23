@@ -11,9 +11,8 @@ namespace CustomersSorting {
             Customer c5 = new Customer("marko", "helsinshka", "Veles", 21000);
 
             Customer[] customers = new Customer[] { c1, c2, c3, c4, c5 };
-            Array.Sort(customers, new CustomerMonthlySpendComparer());
-            Array.Sort(customers); //fails because IComparer is not implemented
             Array.Sort(customers);
+            Array.Sort(customers, new CustomerMonthlySpendComparer());
 
             foreach (var c in customers) {
                 c.PrintCustomer();
