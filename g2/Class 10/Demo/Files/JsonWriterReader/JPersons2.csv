@@ -1,0 +1,27 @@
+[
+  {
+    "ID": 1234,
+    "Name": "Igor Micev",
+    "Address": "Roza Luxemburg",
+    "City": "Skopje",
+    "Email": "igormicev@gmail.com",
+    "Skills": [
+      "C#",
+      "SQL Server",
+      "SSIS",
+      "SSAS"
+    ]
+  },
+  {
+    "ID": 1235,
+    "Name": "Dejan Jovanov",
+    "Address": "Vodnjanska",
+    "City": "Skopje",
+    "Email": "dejan.jovanov@gmail.com",
+    "Skills": [
+      "C#",
+      "Node.js",
+      "HTML/CSS"
+    ]
+  }
+]
