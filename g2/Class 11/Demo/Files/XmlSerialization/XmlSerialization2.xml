@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee>
+    <ID>1</ID>
+    <FullName xmlns="http://www.sedc.mk/">Igor</FullName>
+    <WorkPhone>78123456</WorkPhone>
+    <Skill>
+      <Technology>C#</Technology>
+      <Technology>SQL Server</Technology>
+    </Skill>
+  </Employee>
+  <Employee>
+    <ID>2</ID>
+    <FullName xmlns="http://www.sedc.mk/">Martin</FullName>
+    <WorkPhone>78123456</WorkPhone>
+    <Skill>
+      <Technology>C#</Technology>
+      <Technology>HTML/CSS</Technology>
+    </Skill>
+  </Employee>
+</ArrayOfEmployee>

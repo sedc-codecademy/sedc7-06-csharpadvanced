@@ -1,0 +1,24 @@
+[
+  {
+    "<ID>k__BackingField": 1,
+    "<Name>k__BackingField": "Igor",
+    "<Gender>k__BackingField": "M",
+    "<WorkPhone>k__BackingField": "78123456",
+    "<Address>k__BackingField": "ul. Partizanski odredi, Skopje",
+    "<Skills>k__BackingField": [
+      "C#",
+      "SQL Server"
+    ]
+  },
+  {
+    "<ID>k__BackingField": 2,
+    "<Name>k__BackingField": "Martin",
+    "<Gender>k__BackingField": "M",
+    "<WorkPhone>k__BackingField": "78123456",
+    "<Address>k__BackingField": "ul. Vodnjanska, Skopje",
+    "<Skills>k__BackingField": [
+      "C#",
+      "HTML/CSS"
+    ]
+  }
+]

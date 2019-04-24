@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>1</ID>
+  <Name>Igor</Name>
+  <Gender>77</Gender>
+  <WorkPhone>78123456</WorkPhone>
+  <Skills>
+    <string>C#</string>
+    <string>SQL Server</string>
+  </Skills>
+</Employee>
