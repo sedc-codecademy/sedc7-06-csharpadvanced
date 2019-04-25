@@ -20,7 +20,24 @@ The company needs these requirements to be implemented in 3 phases with each hav
 	* When an order is finished, there should be an option to check the order or continue to payment
 	* The user can't select options that are not valid such as letters where there is a need for numbers or numbers that are larger than the numbers given
 2. Making a payment **03.05.2019**
-	* Homework 2
+	* The application should have a cart system that will:
+		* When user choses an item from the menu it should be added to the cart
+		* Show a message that the item is added to the cart
+		* Tell the user how many stuff are in their cart
+		* Ask them if they want to continue shopping ( redirects them to the start of the app for choosing filter )
+		* If not give them option to continue to check-out
+	* On checkout there should be a reciept generated on which we have:
+		* The items that the person bought
+		* The prices ( Ex: 12.5$ - 10% discount )
+		* The sum of all prices
+		* The ammount that the user saved from discounts
+	* After that there should be an option to choose if we want the reciept to be sent to the user through: 
+		* SMS
+		* E-Mail
+		* Mail ( Post )
+	* The user can choose all the options if they desire
+	* After processing the transaction which takes 3 seconds, the application should send the receipt to the user through all the options they selected. ( write in the console after 3 seconds that a message got recieved through SMS or E-Mail or Mail ( Post )
+	
 3. Refactoring and extra features **13.05.2019**
 	* Homework 3
 

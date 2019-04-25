@@ -1,9 +1,18 @@
-﻿namespace BooksProvider
+﻿using Newtonsoft.Json;
+using System;
+
+namespace BooksProvider
 {
+    [JsonObject]
     public class Book
     {
         public int ID { get; set; }
         public string Title { get; set; }
+
+        [JsonProperty(PropertyName = "titleMk")]
+        [Obsolete("Не чепкајте го насловот")]
+        public string Наслов { get; set; }
+
         public int Year { get; set; }
         public string Series { get; set; }
         public int? SeriesIndex { get; set; }

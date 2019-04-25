@@ -19,9 +19,16 @@ namespace ReflectionBase
             LastName = lastName;
         }
 
+        [Sedc(StringName = "Име")]
         public string FirstName { get; set; }
+
+        [Sedc(StringName = "Презиме")]
         public string LastName { get; set; }
+
         public int Age { get; set; }
+
+        [Sedc(Ignore = true)]
+        public string Secret { get; set; }
 
         public string FullName
         {

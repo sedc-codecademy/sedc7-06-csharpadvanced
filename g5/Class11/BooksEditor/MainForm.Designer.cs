@@ -31,6 +31,9 @@
             this.lbxBooks = new System.Windows.Forms.ListBox();
             this.lbxAuthors = new System.Windows.Forms.ListBox();
             this.cbxColumnSelector = new System.Windows.Forms.ComboBox();
+            this.txtНаслов = new System.Windows.Forms.TextBox();
+            this.lblНаслов = new System.Windows.Forms.Label();
+            this.btnSaveНаслов = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbxBooks
@@ -41,7 +44,7 @@
             this.lbxBooks.ItemHeight = 24;
             this.lbxBooks.Location = new System.Drawing.Point(285, 60);
             this.lbxBooks.Name = "lbxBooks";
-            this.lbxBooks.Size = new System.Drawing.Size(386, 508);
+            this.lbxBooks.Size = new System.Drawing.Size(386, 532);
             this.lbxBooks.TabIndex = 4;
             this.lbxBooks.SelectedIndexChanged += new System.EventHandler(this.lbxBooks_SelectedIndexChanged);
             // 
@@ -53,7 +56,7 @@
             this.lbxAuthors.ItemHeight = 24;
             this.lbxAuthors.Location = new System.Drawing.Point(12, 12);
             this.lbxAuthors.Name = "lbxAuthors";
-            this.lbxAuthors.Size = new System.Drawing.Size(249, 556);
+            this.lbxAuthors.Size = new System.Drawing.Size(249, 580);
             this.lbxAuthors.TabIndex = 3;
             this.lbxAuthors.SelectedIndexChanged += new System.EventHandler(this.lbxAuthors_SelectedIndexChanged);
             // 
@@ -74,11 +77,40 @@
             this.cbxColumnSelector.TabIndex = 5;
             this.cbxColumnSelector.SelectedIndexChanged += new System.EventHandler(this.cbxColumnSelector_SelectedIndexChanged);
             // 
+            // txtНаслов
+            // 
+            this.txtНаслов.Location = new System.Drawing.Point(709, 87);
+            this.txtНаслов.Name = "txtНаслов";
+            this.txtНаслов.Size = new System.Drawing.Size(240, 29);
+            this.txtНаслов.TabIndex = 6;
+            // 
+            // lblНаслов
+            // 
+            this.lblНаслов.AutoSize = true;
+            this.lblНаслов.Location = new System.Drawing.Point(705, 60);
+            this.lblНаслов.Name = "lblНаслов";
+            this.lblНаслов.Size = new System.Drawing.Size(161, 24);
+            this.lblНаслов.TabIndex = 7;
+            this.lblНаслов.Text = "Внесете Наслов:";
+            // 
+            // btnSaveНаслов
+            // 
+            this.btnSaveНаслов.Location = new System.Drawing.Point(709, 123);
+            this.btnSaveНаслов.Name = "btnSaveНаслов";
+            this.btnSaveНаслов.Size = new System.Drawing.Size(179, 48);
+            this.btnSaveНаслов.TabIndex = 8;
+            this.btnSaveНаслов.Text = "Save";
+            this.btnSaveНаслов.UseVisualStyleBackColor = true;
+            this.btnSaveНаслов.Click += new System.EventHandler(this.btnSaveНаслов_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1069, 582);
+            this.ClientSize = new System.Drawing.Size(1341, 607);
+            this.Controls.Add(this.btnSaveНаслов);
+            this.Controls.Add(this.lblНаслов);
+            this.Controls.Add(this.txtНаслов);
             this.Controls.Add(this.cbxColumnSelector);
             this.Controls.Add(this.lbxBooks);
             this.Controls.Add(this.lbxAuthors);
@@ -88,6 +120,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,6 +129,9 @@
         private System.Windows.Forms.ListBox lbxBooks;
         private System.Windows.Forms.ListBox lbxAuthors;
         private System.Windows.Forms.ComboBox cbxColumnSelector;
+        private System.Windows.Forms.TextBox txtНаслов;
+        private System.Windows.Forms.Label lblНаслов;
+        private System.Windows.Forms.Button btnSaveНаслов;
     }
 }
 
