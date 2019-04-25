@@ -1,0 +1,48 @@
+Development steps za zadacata:
+
+Step 1:
+	Definiranje na kopcinjata od abecedata (button1 ... button26) plus "New" button. Form1 name = HangMan
+	Form1:
+	MaximumSize: 755, 550
+	MinimumSize: 755, 550
+	StartPosition: CenterScreen
+	Text: HangMan
+	comboBox1 so items: "MK Cities" i "Countries"
+
+	Pushtanje na formata da se vidi deka se e ok.
+	Dopolnitelno objasnuvanje ako e potrebano, ili ako ima prashanja od studentite. Ova demo e i na nekoj nacin voved vo WinForms, ednostavno e, samo so buttons i labeli.
+	Slednite cekori se programiranje, t.e. pishuvanje kod, i objasnuvanje del po del, kako shto se dadeni.
+	
+Step2:
+	Definiranje na slednite properties vo Form1 clasata, so objasnuvanje za studentite.
+	
+	string[] MK_cities = ...
+	string[] Countries = ...
+	string[] words;
+
+    Random r = new Random();
+    List<Label> labels = new List<Label>();
+    Button[] alphabetButtons;
+    bool ignore = false;
+    int stage = 0;
+    string randomWord;
+	
+	Vo demoto se koristi Array.ForEach na nekolku mesta. ForEach koristi actions preku => expression. ova moze da se podobjasni malku ako e potrebno.
+
+Step3:
+	Definiranje na metotod btnNew_Click() za "New" button-ot samo (drugite buttons se tretiraat razlicno so btn_Click() metodot koj se dodava kako action na site niv - letters) 
+	
+	Vo ovoj metod se inicijaliziraat labelite.
+	Definiranje na btn_Click() metodot.
+
+Step4:
+	Definiranje na btn_Click() metodot. Toj e action metod za site buttons. Actions se dodavaat vo sledniot cekor za Form1_Load().
+	Vo ovoj metod se hendlaat labelite, t.e. bukvite od random zborot koja kako e pogodena od korisnikot.
+
+Step5:
+	Kod za Form1_Load.  
+	Kod za Form1_Paint(). Ovoj metod se povikuva vo konstruktorot Form1() i so btnNew_Click() i btn_Click(). Zavisi od vrednosta na stage.
+	Kod za YouDidIt() i YouLostIt() metodite.
+
+
+Zadacata ima minimum UI a povekje kod. Cel e da se dade akcent na poznavanje na C#. 
