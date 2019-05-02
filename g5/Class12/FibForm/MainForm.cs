@@ -53,7 +53,15 @@ namespace FibForm
 
         private string FindMostCommonByte(string filename)
         {
+            //using (FileStream fs = new FileStream(filename, FileMode.OpenOrCreate))
+            //{
+            //    int x = 0;
+            //    int y = 4 / x;
+            //    fs.Position = 200000000;
+            //    fs.ReadByte();
+            //}
             var bytes = File.ReadAllBytes(filename);
+
             var mostCommon = bytes.GroupBy(b => b).Select(g => new
             {
                 Byte = g.Key,
