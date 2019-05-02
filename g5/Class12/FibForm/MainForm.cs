@@ -69,6 +69,7 @@ namespace FibForm
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 int counter = 0;
+                var lockObject = new object();
                 var fileNames = Directory.GetFiles(dialog.SelectedPath);
                 lbxFilenames.Items.AddRange(fileNames);
                 lblCounter.Text = $"{counter}/{fileNames.Length}";
@@ -77,9 +78,13 @@ namespace FibForm
                 {
                     Thread thread = new Thread(new ThreadStart(() =>
                     {
-                        counter = counter + 1;
-                        lbxAnalResult.Items.Add($"{counter} ({filename}): {FindMostCommonByte(filename)}");
-                        lblCounter.Text = $"{counter}/{fileNames.Length}";
+                        var commonByte = FindMostCommonByte(filename);
+                        lock (lockObject)
+                        {
+                            counter = counter + 1;
+                            lbxAnalResult.Items.Add($"{counter} ({filename}): {commonByte}");
+                            lblCounter.Text = $"{counter}/{fileNames.Length}";
+                        }
                     }));
                     thread.Start();
                 }
