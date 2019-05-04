@@ -1,0 +1,4 @@
+This is our text!
+We are writing it manually!
+This is not a joke!
+Please don't joke with streams!
