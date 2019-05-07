@@ -49,6 +49,13 @@
     <Compile Include="Race.cs" />
     <Compile Include="Responses\Response.cs" />
     <Compile Include="Responses\StartGameResponse.cs" />
+    <Compile Include="Units\UnitFactory.cs" />
+    <Compile Include="Units\IWorker.cs" />
+    <Compile Include="Units\Protoss\Probe.cs" />
+    <Compile Include="Units\Terran\SCV.cs" />
+    <Compile Include="Units\Worker.cs" />
+    <Compile Include="Units\Zerg\Drone.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

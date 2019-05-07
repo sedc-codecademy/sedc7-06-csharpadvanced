@@ -1,4 +1,5 @@
 ﻿using StarcraftLib.Responses;
+using StarcraftLib.Units;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,6 +39,12 @@ namespace StarcraftLib
             if (validation.Success)
             {
                 IsStarted = true;
+                foreach (var player in players)
+                {
+                    // add starting units to player
+                    var worker = UnitFactory.CreateWorker(player.Race);
+                    player.Units.Add(worker);
+                }
             }
             return validation;
         }
@@ -70,6 +77,7 @@ namespace StarcraftLib
                 race = (Race)r.Next(3);
             }
             player.Race = race.Value;
+            players.Add(player);
             return true;
         }
 
@@ -83,10 +91,12 @@ namespace StarcraftLib
             {
                 return StartGameResponse.Error("Not enough players");
             }
-
-
-            //if ()
-                return StartGameResponse.Ok();
+            var colors = players.Select(p => p.Color).Distinct();
+            if (colors.Count() != players.Count)
+            {
+                return StartGameResponse.Error("Clashing player colors");
+            }
+            return StartGameResponse.Ok();
         }
     }
 }
