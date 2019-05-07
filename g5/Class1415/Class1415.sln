@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarcraftConsole", "StarcraftConsole\StarcraftConsole.csproj", "{31CC3B42-210B-49FA-9615-995E3F297926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarcraftLib", "StarcraftLib\StarcraftLib.csproj", "{469233C6-55A0-4A43-B2DF-7197252BE5FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31CC3B42-210B-49FA-9615-995E3F297926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31CC3B42-210B-49FA-9615-995E3F297926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31CC3B42-210B-49FA-9615-995E3F297926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31CC3B42-210B-49FA-9615-995E3F297926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469233C6-55A0-4A43-B2DF-7197252BE5FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469233C6-55A0-4A43-B2DF-7197252BE5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469233C6-55A0-4A43-B2DF-7197252BE5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469233C6-55A0-4A43-B2DF-7197252BE5FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {828801C4-98D7-41F9-AF0E-C3CEEDF91FF0}
+	EndGlobalSection
+EndGlobal
