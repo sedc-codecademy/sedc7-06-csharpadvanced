@@ -2,6 +2,7 @@
 ## Adventure Game 🗺
 The adventure game is very simple. You have a hero that starts from point 1. There are 30 points that he needs to pass in order to win. On every point an **Event** happens that can change the heroes **Health**, **Armor** or **Food**. If the hero runs out of health the hero dies. The hero can go through the points by rolling a D6 Dice. The rules are:
 * The hero has Health, Armor and Food
+* A hero starts with 120 Health, 100 Armor and 140 Food
 * Hero throws a dice at the start of the game
 * After every throw the hero moves that much spaces towards the goal ( 30 or more )
 * On every space an event is triggered 
