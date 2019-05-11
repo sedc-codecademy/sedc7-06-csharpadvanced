@@ -14,7 +14,7 @@ The adventure game is very simple. You have a hero that starts from point 1. The
 
 ## Bonus🚩
 * Ask the user if they want to start again
-* Good event titles are colored with red, Bad with green and Neutral with blue
+* Good event titles are colored with green, Bad with red and Neutral with blue
 * While the hero has armor the health from events is reduced by 5
 * While the hero has no food, every time they throw a dice they loose 5 health
 * If a player enters **aspirine** before hitting enter to roll a dice, give hero 999 health ( Cheat )
