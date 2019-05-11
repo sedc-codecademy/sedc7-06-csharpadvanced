@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Event.cs" />
     <Compile Include="EventType.cs" />
+    <Compile Include="GameStatus.cs" />
+    <Compile Include="Hero.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

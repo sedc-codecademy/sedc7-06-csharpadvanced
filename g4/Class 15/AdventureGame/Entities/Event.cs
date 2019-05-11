@@ -14,5 +14,26 @@ namespace Entities
         public int ArmorModifier { get; set; }
         public int FoodModifier { get; set; }
         public EventType Type { get; set; }
+
+        public void PrintEvent()
+        {
+            switch (Type)
+            {
+                case EventType.Neutral:
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
+                    break;
+                case EventType.Good:
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    break;
+                case EventType.Bad:
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    break;
+                default:
+                    break;
+            }
+            Console.WriteLine($"{Type} Event: {Title}");
+            Console.ResetColor();
+            Console.WriteLine(Description);
+        }
     }
 }
