@@ -1,0 +1,242 @@
+[
+	{
+	  "Title": "Bear-Shark!!!",
+	  "Description": "You have been attacked by a Bear-Shark! RUN FOR YOUR LIFE!",
+	  "HealthModifier": -15,
+	  "ArmorModifier": -50,
+	  "FoodModifier": -15,
+	  "Type": 2
+	},
+	{
+	  "Title": "A Clumsy Thief",
+	  "Description": "A very clumsy thief tries to steal your food. You catch him. He tries to cut you, fails, tries to run, trips and drops his gauntlet.",
+	  "HealthModifier": -10,
+	  "ArmorModifier": 20,
+	  "FoodModifier": 0,
+	  "Type": 0
+	},
+	{
+	  "Title": "Hole in the dark",
+	  "Description": "In the dark you trip and fall in a huge hole.",
+	  "HealthModifier": -10,
+	  "ArmorModifier": -10,
+	  "FoodModifier": -5,
+	  "Type": 2
+	},
+	{
+	  "Title": "Lucky Charm",
+	  "Description": "You find a lucky charm. You decide to keep it. Few meters later you find a bag of food and clothes",
+	  "HealthModifier": 0,
+	  "ArmorModifier": 10,
+	  "FoodModifier": 20,
+	  "Type": 1
+	},
+	{
+	  "Title": "A Wandering Trader",
+	  "Description": "A wandering trader crosses your path. You see a shiny helmet and decide to trade some food for it.",
+	  "HealthModifier": 0,
+	  "ArmorModifier": 15,
+	  "FoodModifier": -20,
+	  "Type": 0
+	},
+	{
+	  "Title": "Huge Bee",
+	  "Description": "A huge bee apears from nowhere. Tries to sting you but you jump in a nearby lake and hide.",
+	  "HealthModifier": -10,
+	  "ArmorModifier": -15,
+	  "FoodModifier": -10,
+	  "Type": 2
+	},
+	{
+	  "Title": "Drunk Faries",
+	  "Description": "You see 3 drunk faries. They mistake you for a prince and grant you 3 wishes.",
+	  "HealthModifier": 10,
+	  "ArmorModifier": 10,
+	  "FoodModifier": 10,
+	  "Type": 1
+	},
+	{
+	  "Title": "Bad Sandwitch",
+	  "Description": "You ate a bad sandwitch. You are now sick.",
+	  "HealthModifier": -10,
+	  "ArmorModifier": 0,
+	  "FoodModifier": -10,
+	  "Type": 2
+	},
+	{
+	  "Title": "Gamblers Den",
+	  "Description": "You enter a gamblers den. You gamble and win some food. The gamblers are not very happy so they start a brawl.",
+	  "HealthModifier": -5,
+	  "ArmorModifier": -10,
+	  "FoodModifier": 20,
+	  "Type": 0
+	},
+	{
+	  "Title": "Trader Camp",
+	  "Description": "You come accross a trader camp. They invite you to rest near the fire.",
+	  "HealthModifier": 10,
+	  "ArmorModifier": 0,
+	  "FoodModifier": 0,
+	  "Type": 1
+	},
+	{
+	  "Title": "Frog Princess?",
+	  "Description": "A frog asks you to kiss it so that it can become a princess. You kiss it. Nothing happens.",
+	  "HealthModifier": 0,
+	  "ArmorModifier": 0,
+	  "FoodModifier": 0,
+	  "Type": 0
+	},
+	{
+	  "Title": "Pack of Wolves",
+	  "Description": "A pack of Wolves appear. They attack you but you manage to climb a tree just in time.",
+	  "HealthModifier": -10,
+	  "ArmorModifier": -15,
+	  "FoodModifier": 0,
+	  "Type": 2
+	},
+	{
+	  "Title": "Fat Gatekeeper",
+	  "Description": "You stop before a huge gate. A really fat gate keeper guards the door. Maybe you can bribe it with something...",
+	  "HealthModifier": 0,
+	  "ArmorModifier": 0,
+	  "FoodModifier": -20,
+	  "Type": 2
+	},
+	{
+	  "Title": "Everything is fine",
+	  "Description": "Your journey is going smoothly.",
+	  "HealthModifier": 0,
+	  "ArmorModifier": 0,
+	  "FoodModifier": 0,
+	  "Type": 0
+	},
+	{
+	  "Title": "Evil Witch",
+	  "Description": "An evil Witch puts an evil spell on you!",
+	  "HealthModifier": -10,
+	  "ArmorModifier": 0,
+	  "FoodModifier": 0,
+	  "Type": 2
+	},
+	{
+	  "Title": "Nigerian Prince",
+	  "Description": "A Nigerian Prince tells you that you inherit his riches. You just need to give him some food so he can have the strength to bring you the riches. You give him food and he runs away.",
+	  "HealthModifier": 0,
+	  "ArmorModifier": 0,
+	  "FoodModifier": -20,
+	  "Type": 2
+	},
+	{
+	  "Title": "Fortune well",
+	  "Description": "You throw a coin in a fortune well. You start feeling very good and healthy all of a sudden...",
+	  "HealthModifier": 15,
+	  "ArmorModifier": 0,
+	  "FoodModifier": 0,
+	  "Type": 1
+	},
+	{
+	  "Title": "All is good",
+	  "Description": "You continue on your journey. Everything is aye okay.",
+	  "HealthModifier": 0,
+	  "ArmorModifier": 0,
+	  "FoodModifier": 0,
+	  "Type": 0
+	},
+	{
+	  "Title": "Rat People",
+	  "Description": "Rat People storm you, bite you and steal some of your food.",
+	  "HealthModifier": -10,
+	  "ArmorModifier": -10,
+	  "FoodModifier": -5,
+	  "Type": 2
+	},
+	{
+	  "Title": "Strange Fruit",
+	  "Description": "You find a strange fruit. You eat it. It gave you strength, but now you feel more hungry for some reason. You eat some more.",
+	  "HealthModifier": 10,
+	  "ArmorModifier": 0,
+	  "FoodModifier": -10,
+	  "Type": 0
+	},
+	{
+	  "Title": "Unicorn!!!!!",
+	  "Description": "You see a unicorn! It's amazing. You are hungry tho, you hunt it and eat it. You feel powerfull.",
+	  "HealthModifier": 10,
+	  "ArmorModifier": 0,
+	  "FoodModifier": 10,
+	  "Type": 1
+	},
+	{
+	  "Title": "Sleeping Troll",
+	  "Description": "The ground shakes. You are actually walking on a sleeping troll. He hits you in his sleep.",
+	  "HealthModifier": -10,
+	  "ArmorModifier": -20,
+	  "FoodModifier": 0,
+	  "Type": 2
+	},
+	{
+	  "Title": "Ninja Graveyard",
+	  "Description": "You walk accross a Graveyard. Ninja Ghosts come out of the graves. You can't fight them. You run.",
+	  "HealthModifier": -15,
+	  "ArmorModifier": -10,
+	  "FoodModifier": 0,
+	  "Type": 2
+	},
+	{
+	  "Title": "Trick or Treat",
+	  "Description": "The god of pranks asks you: Trick or Treat. You choose Treat. Your boots transformed in to chicken wings. So much for Treat...",
+	  "HealthModifier": 0,
+	  "ArmorModifier": -10,
+	  "FoodModifier": 10,
+	  "Type": 0
+	},
+	{
+	  "Title": "Horrible Bard",
+	  "Description": "A bard starts singing. He is so horrible that you bleed from your ears.",
+	  "HealthModifier": -10,
+	  "ArmorModifier": 0,
+	  "FoodModifier": 0,
+	  "Type": 2
+	},
+	{
+	  "Title": "Bear Trap",
+	  "Description": "You step in a bear trap! It really hurts!",
+	  "HealthModifier": -10,
+	  "ArmorModifier": -5,
+	  "FoodModifier": 0,
+	  "Type": 2
+	},
+	{
+	  "Title": "The Holy Grail",
+	  "Description": "You found The Holy Grail by accident. You feel blessed.",
+	  "HealthModifier": 10,
+	  "ArmorModifier": 10,
+	  "FoodModifier": 10,
+	  "Type": 1
+	},
+	{
+	  "Title": "Strange Granny",
+	  "Description": "A strange granny makes you dinner. It is amazing but she keeps feeding you more. You are now fed but some of your armor starts cracking.",
+	  "HealthModifier": 0,
+	  "ArmorModifier": -10,
+	  "FoodModifier": 10,
+	  "Type": 0
+	},
+	{
+	  "Title": "Abandoned Camp",
+	  "Description": "An abandoned camp. You find some food and clothing left.",
+	  "HealthModifier": 0,
+	  "ArmorModifier": 5,
+	  "FoodModifier": 10,
+	  "Type": 1
+	},
+	{
+	  "Title": "Adventuring Accident",
+	  "Description": "While looking for directions from a tree, you fall down and injure your leg.",
+	  "HealthModifier": -10,
+	  "ArmorModifier": -5,
+	  "FoodModifier": 0,
+	  "Type": 2
+	}
+]
