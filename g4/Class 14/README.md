@@ -1,39 +1,34 @@
-# Class 14
-## Class agenda
-* Good Practices
-* Programming principles
-
-## Good Practices 🚀
+# Good Practices 🚀
 In C# as in any other language there are some Good Practices or Invisible Rules that we need to follow in order for our code to be better, more efficient and for the most part better understood. Keeping up with good practices and conventions can result in a scalable, readable and easy to maintain code. Some times we find our selves writing code that doesn't follow some of these practices, but we must always strive to make our code as good as we possibly can. Here are some good practices that can be used to write better C# code:
-### Naming ☄
+## Naming ☄
 * **Variables** and **Parameters** are always written in **camelCase**
 * **Classes, Methods, Properties** are written in **PascalCase**
 * **Private fields** are always written with **underscore camelCase** ( ex: _privateField )
-### Properties and Fields ☄
+## Properties and Fields ☄
 * Use properties for values in any Class
 * Avoid using fields unless they are private 
 * Use **private fields** to hide values and instances that are exclusive to a class and need to be hidden from the outside world
 * Write **boolean names** so that they can be answered with **yes or no** ( IsDeleted, CanLogin, HasCheckedIn )
 * Always add Exception prefix when creating custom Exception classes
 * Always add the I suffix when writing Interfaces
-### Methods ☄
+## Methods ☄
 * Write Service Classes and group/organize methods
 * Keep methods short
 * Avoid too many parameters
 * If a method has too many lines of code or it has too many parameters, think about splitting it in to multiple smaller methods if possible
-### Loops ☄
+## Loops ☄
 * Use foreach whenever possible
 * Don't request fixed values inside a loop, declare a variable outside with the value
 * Use break if searching for a value to close the loop when data needed is found
 * Counters by convention have one letter name usually: i, j, k or i, ii, iii etc.
-### If/Else statements ☄
+## If/Else statements ☄
 * When writing an if statement that results in bool value in any way, don't use comparison with true or false
 * Invert If statements to see if you can make else redundant 
 * Don't use one liner ifs for more than one line of code
 * For longer if/else statements try using switch instead
-## Programming Principles 🎯
+# Programming Principles 🎯
 Just like in any other craft and profession, there are principles that were laid over the years by professionals and the community that we can follow. These principles can serve as a foundation to good programming habits as well as collection of rules to follow when writing and developing any kind of programs. There are many principles, some more complicated than others. We are going to mention some of the most well known.
-### SOLID 🌟
+## SOLID 🌟
 Writing code and building applications is always hard. It is hard because we are not building an application to work one time, but work and scale in the future. For this reason, if the code piles in one place, it can be really hard to maintain, scale and add new features. The SOLID principles is a compilation of principles that set up a baseline for a good, scalable and maintainable code.
 * Single Responsibility ⭐
 The single responsibility principle tackles the problems mentioned above by adding a rule that every organizational entity ( Ex: class, module etc. ) should have one responsibility and do stuff only for that thing. This means that every functionality of our software should be separated in to a new entity ( in our example classes ) and when we add new code we should add that code to the entity within that functional scope or create a new entity in which to store it. At the end of the day there should be only one reason for changing an entity ( class ). This helps us to easily navigate through our application code and add new features easily. With this principle used we can make our application more flexible and scalable.
@@ -45,7 +40,7 @@ The Liskov Substitution has a simple rule. If we have a parent class and that cl
 The interface segregation principle follows a simple rule. We don't want a class to implement an interface and be forced to hold a method it will not use. This can happen when we model our interfaces only by our classes and after reusing the interfaces we end up in a situation with extra methods that we never use. This is fixed with the interface segregation principle by creating interfaces for every logical scope. This way we can reuse interfaces and escape the problem of redundant methods in classes. 
 * Dependency Inversion ⭐
 The one thing that we need to strive in our code is to have as much decoupled code as possible. Decoupled means that we don't want our code to be full of dependencies, we don't want all pieces of code to be dependent on one another. If we have tightly coupled code ( code full of dependencies ) and we try to change something we would quickly realize that we need to change a lot of code for that small change. This is a problem because we don't want to change tons of code for one small change, and then test the whole application again because we did a lot of changes. This makes our code unreliable, hard to maintain and really hard to scale. The dependency inversion principle says that we need to abstract the dependencies that we have and ask for them from outside. This creates methods and classes that don't really care about the dependency inside of their implementation. They request for an implementation of a certain abstraction and when they get it they do their job. In C# we can do that with Interfaces. We can request for an interface and wait for an implementation of ANY class that implements that interface. Not only does this help us with a decoupled code, but it also gives us the benefit of having flexible and scalable code. 
-### Other well known principles ⚡
+## Other well known principles ⚡
 * DRY ( Don't Repeat Yourself ) 
 The DRY principle is a rule that we need to avoid and try not to repeat implementation in our code. Every piece of logic must have a single and unique representation in our code. 
 * YAGNI ( You Aren't Gonna Need It )
